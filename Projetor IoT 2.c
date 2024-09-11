@@ -37,14 +37,14 @@ void loop() {
     Serial.println(" cm");
 
     // Control the first LED based on distance
-    if (distancia < 60) {
+    if (distancia < 180) {
         digitalWrite(ledPin1, HIGH);
     } else {
         digitalWrite(ledPin1, LOW);
     }
 
     // Control the second LED based on distance
-    if (distancia < 30) { // Ajuste o valor conforme necessário para o segundo LED
+    if (distancia < 90) { // Ajuste o valor conforme necessário para o segundo LED
         digitalWrite(ledPin2, HIGH);
     } else {
         digitalWrite(ledPin2, LOW);
